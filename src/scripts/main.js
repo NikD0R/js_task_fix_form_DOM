@@ -2,7 +2,7 @@
 
 const inputs = document.querySelectorAll('input');
 
-inputs.forEach(element => {
+inputs.forEach((element) => {
   const label = document.createElement('label');
 
   label.classList.add('field-label');
@@ -12,7 +12,9 @@ inputs.forEach(element => {
   element.parentNode.insertBefore(label, element);
 });
 
-inputs.forEach(input => {
-  input.setAttribute('placeholder', input.name.charAt(0).toUpperCase() + input.name.slice(1))
+inputs.forEach((input) => {
+  input.setAttribute(
+    'placeholder',
+    input.name.charAt(0).toUpperCase() + input.name.slice(1),
+  );
 });
-
